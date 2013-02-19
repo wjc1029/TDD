@@ -7,19 +7,19 @@ namespace TDDdemo
 {
     class Program
     {
-       
+
         static void Main(string[] args)
         {
-            //Sum(1, 2);
+            Box box = new Box();
 
+            box.Push("a", 10);
+            box.Push("b", 10);
+            box.Push("c", 100);
+
+            box.List();
+            Console.WriteLine(box.Pop());
+            Console.ReadLine();
         }
-
-        public static int Sum(int a, int b)
-        {
-            return a + b;
-        }
-
-        
 
     }
 }

@@ -78,5 +78,26 @@ namespace TestProject
             Assert.AreEqual(j, i + 1);
             //Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
+
+        /// <summary>
+        ///A test for Pop
+        ///</summary>
+        [TestMethod()]
+        public void PopTest()
+        {
+            
+            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+        /// <summary>
+        ///A test for List
+        ///</summary>
+        [TestMethod()]
+        public void ListTest()
+        {
+
+            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+        
     }
 }
