@@ -68,28 +68,15 @@ namespace TestProject
         ///A test for Push
         ///</summary>
         [TestMethod()]
+        [DeploymentItem("TDDdemo.exe")]
         public void PushTest()
         {
-            Box target = new Box(); // TODO: Initialize to an appropriate value
-            string taskName = string.Empty; // TODO: Initialize to an appropriate value
-            int priority = 0; // TODO: Initialize to an appropriate value
-            target.Push(taskName, priority);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
-
-        /// <summary>
-        ///A test for Push
-        ///</summary>
-        [TestMethod()]
-        [DeploymentItem("TDDdemo.exe")]
-        public void PushTest1()
-        {
             Box_Accessor target = new Box_Accessor(); // TODO: Initialize to an appropriate value
-            
-            string taskName = string.Empty; // TODO: Initialize to an appropriate value
-            int priority = 0; // TODO: Initialize to an appropriate value
-            target.Push(taskName, priority);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            int i = target.Count();
+            target.Push("a", 10);
+            int j = target.Count();
+            Assert.AreEqual(j, i + 1);
+            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
     }
 }
