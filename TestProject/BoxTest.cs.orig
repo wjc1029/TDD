@@ -80,6 +80,14 @@ namespace TestProject
         }
 
         /// <summary>
+<<<<<<< HEAD
+        ///A test for Pop
+        ///</summary>
+        [TestMethod()]
+        public void PopTest()
+        {
+            
+=======
         ///A test for Push: verify push twice count
         ///</summary>
         [TestMethod()]
@@ -92,10 +100,22 @@ namespace TestProject
             target.Push("b", 20);
             int j = target.Count();
             Assert.AreEqual(j, i + 2);
+>>>>>>> 9c618749fe2cec8323028eb66ded3e260a7bdaf2
             //Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
+<<<<<<< HEAD
+        ///A test for List
+        ///</summary>
+        [TestMethod()]
+        public void ListTest()
+        {
+
+            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+        
+=======
         ///A test for Push: verify push content
         ///</summary>
         [TestMethod()]
@@ -186,7 +206,7 @@ namespace TestProject
         public void PushTest6()
         {
             Box_Accessor target = new Box_Accessor(); // TODO: Initialize to an appropriate value
-            int numpush = 1000000;
+            int numpush = 1000;
             for(int i=0; i<numpush; i++)
             {
                 target.Push("a"+i.ToString(), i);
@@ -254,26 +274,6 @@ namespace TestProject
 
             //Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
-
-        /// <summary>
-        ///A test for Pop
-        ///</summary>
-        [TestMethod()]
-        public void PopTest()
-        {
-            
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
-
-        /// <summary>
-        ///A test for List
-        ///</summary>
-        [TestMethod()]
-        public void ListTest()
-        {
-
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
-        
+>>>>>>> 9c618749fe2cec8323028eb66ded3e260a7bdaf2
     }
 }

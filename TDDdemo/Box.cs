@@ -11,6 +11,10 @@ namespace TDDdemo
 
         public void Push(string taskName, int priority)
         {
+            if(!string.IsNullOrEmpty(taskName)
+                &&!tasks.ContainsKey(taskName)
+                &&taskName.IndexOf(" ")<0
+                &&priority>=0)
             tasks.Add(taskName, priority);
         }
 
