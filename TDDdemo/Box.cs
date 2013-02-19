@@ -11,7 +11,7 @@ namespace TDDdemo
 
         public void Push(string taskName, int priority)
         {
-            throw new NotImplementedException();
+            return tasks.Add(taskName,priority);
         }
 
         public string Pop() {
