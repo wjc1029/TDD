@@ -11,7 +11,7 @@ namespace TDDdemo
 
         public void Push(string taskName, int priority)
         {
-            tasks.Add(taskName,priority);
+             tasks.Add(taskName,priority);
         }
 
         public string Pop() {
