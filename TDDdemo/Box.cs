@@ -15,7 +15,8 @@ namespace TDDdemo
         }
 
         public string Pop() {
-            throw new NotImplementedException();
+
+             throw new NotImplementedException();
         }
 
         public void List() {
