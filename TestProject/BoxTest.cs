@@ -13,8 +13,6 @@ namespace TestProject
     [TestClass()]
     public class BoxTest
     {
-
-
         private TestContext testContextInstance;
 
         /// <summary>
