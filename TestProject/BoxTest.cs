@@ -179,7 +179,7 @@ namespace TestProject
         }
 
         /// <summary>
-        ///A test for Push: verify push 1000 times
+        ///A test for Push: verify push 1000000 times
         ///</summary>
         [TestMethod()]
         [DeploymentItem("TDDdemo.exe")]
@@ -261,8 +261,7 @@ namespace TestProject
         [TestMethod()]
         public void PopTest()
         {
-            
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
@@ -271,8 +270,7 @@ namespace TestProject
         [TestMethod()]
         public void ListTest()
         {
-
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
         
     }
